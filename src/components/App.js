@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './bookstore-logo.png';
-import './App.css';
+import logo from '../assets/images/bookstore-logo.png';
 
 function App() {
   return (
