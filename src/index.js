@@ -14,19 +14,19 @@ var faker = require('faker');
 
 const booksArray = [
   {
-    id: (Math.random() * (10 ** 9)),
+    id: (Math.floor(Math.random() * 99) + 1),
     title: faker.lorem.words(),
-    category: 'Action',
+    category: 'action',
   },
   {
-    id: (Math.random() * (10 ** 9)),
+    id: (Math.floor(Math.random() * 99) + 1),
     title: faker.lorem.words(),
-    category: 'Learning',
+    category: 'biography',
   },
   {
-    id: (Math.random() * (10 ** 9)),
+    id: (Math.floor(Math.random() * 99) + 1),
     title: faker.lorem.words(),
-    category: 'Horror',
+    category: 'history',
   },
 ];
 
