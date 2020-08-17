@@ -1,10 +1,5 @@
 # 📃 bookstore-react-redux
 
-this is a simple game, made using phaser framework.
-the objective of this game is to collect the diamond on the scene while trying to avoid the spikes.
-you start with 3 lives and if you hit the spikes, you lose one. each diamond gives you 3 scores. so, try to collect all of them.
-the game is over if you run out of lives or collect all the diamonds. have fun!
-
 
 
 ## 📡 technologies used
@@ -25,12 +20,12 @@ node.js, react, react-dom, react-create-app, npm, css, es6, webpack and git was 
 
 ## 🚀 the project
 
-this project can be found in https://github.com/firmoholanda/bookstore-react-redux
+this project can be found in https://github.com/cyrus-kiprop/bookstore-react-redux
 
 
-### ✨ [live version](https://calculator-react-firmoholanda.herokuapp.com/)
+### ✨ [live version](http://bookstore-react-redux-ck-fh.herokuapp.com/)
 
-<a href="https://calculator-react-firmoholanda.herokuapp.com/" target="_blank">
+<a href="" target="_blank">
     <img alt="app image" src=""/>
 </a>
 
@@ -40,7 +35,7 @@ this project can be found in https://github.com/firmoholanda/bookstore-react-red
 
 to get started with the app, clone the repo:
 ```
-$ git@github.com:firmoholanda/bookstore-react-redux.git
+$ git@github.com:cyrus-kiprop/bookstore-react-redux.git
 ```
 
 navigate into the newly created folder:
@@ -98,9 +93,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## 🤝 contributing
 
-contributions, issues, and feature requests are welcome!<br/>feel free to check [issues page](hhttps://github.com/firmoholanda/bookstore-react-redux/development/issues).
+contributions, issues, and feature requests are welcome!<br/>feel free to check [issues page](hhttps://github.com/cyrus-kiprop/bookstore-react-redux/development/issues).
 
-1. fork it (https://github.com/firmoholanda/bookstore-react-redux/development/fork)
+1. fork it (https://github.com/cyrus-kiprop/bookstore-react-redux/development/fork)
 2. create your working branch (git checkout -b [choose-a-name])
 3. commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. push to the branch (git push origin [chosen-name])
@@ -110,6 +105,7 @@ contributions, issues, and feature requests are welcome!<br/>feel free to check 
 
 ## 🤖 contributor
 
+cyrus kiprop - [GitHub](https://github.com/Cyrus-Kiprop)
 
 firmo holanda - [GitHub](https://github.com/firmoholanda)
 
@@ -123,4 +119,4 @@ give a ⭐️ if you like this project!
 
 ## 📝 license
 
-this project is [MIT](https://github.com/firmoholanda/bookstore-react-redux/development/license.txt) licensed.
+this project is [MIT](https://github.com/cyrus-kiprop/bookstore-react-redux/development/license.txt) licensed.
