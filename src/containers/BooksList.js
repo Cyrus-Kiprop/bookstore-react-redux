@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
 const BooksList = ({ books }) => (
-  <table>
+  <table className="table table-striped table-hover">
     <thead>
       <tr>
-        <th>id</th>
-        <th>title</th>
-        <th>category</th>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">category</th>
       </tr>
     </thead>
     <tbody>
