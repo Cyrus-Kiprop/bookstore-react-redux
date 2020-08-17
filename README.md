@@ -1,10 +1,76 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📃 bookstore-react-redux
 
-## Available Scripts
+this is a simple game, made using phaser framework.
+the objective of this game is to collect the diamond on the scene while trying to avoid the spikes.
+you start with 3 lives and if you hit the spikes, you lose one. each diamond gives you 3 scores. so, try to collect all of them.
+the game is over if you run out of lives or collect all the diamonds. have fun!
+
+
+
+## 📡 technologies used
+
+- node.js
+-	react
+-	react-dom
+-	react-create-app
+-	npm
+-	css
+-	es6
+- webpack
+- git
+
+node.js, react, react-dom, react-create-app, npm, css, es6, webpack and git was used on this project.
+
+
+
+## 🚀 the project
+
+this project can be found in https://github.com/firmoholanda/bookstore-react-redux
+
+
+### ✨ [live version](https://calculator-react-firmoholanda.herokuapp.com/)
+
+<a href="https://calculator-react-firmoholanda.herokuapp.com/" target="_blank">
+    <img alt="app image" src=""/>
+</a>
+
+
+
+## 🔨 instructions
+
+to get started with the app, clone the repo:
+```
+$ git@github.com:firmoholanda/bookstore-react-redux.git
+```
+
+navigate into the newly created folder:
+```
+$ cd bookstore-react-redux
+```
+
+install the dependencies:
+```
+$ npm install
+```
+
+bundle the files and start the development server:
+```
+$ npm start
+```
+
+visit this link in your browser:
+```
+$ http://localhost:8000/
+```
+
+run tests:
+```
+$ npm test
+
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -12,12 +78,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `npm run build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -26,43 +92,35 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🤝 contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+contributions, issues, and feature requests are welcome!<br/>feel free to check [issues page](hhttps://github.com/firmoholanda/bookstore-react-redux/development/issues).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. fork it (https://github.com/firmoholanda/bookstore-react-redux/development/fork)
+2. create your working branch (git checkout -b [choose-a-name])
+3. commit your changes (git commit -am 'what this commit will fix/add/improve')
+4. push to the branch (git push origin [chosen-name])
+5. create a new pull request
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤖 contributor
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+firmo holanda - [GitHub](https://github.com/firmoholanda)
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+## 🙋‍♂ show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+give a ⭐️ if you like this project!
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+## 📝 license
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+this project is [MIT](https://github.com/firmoholanda/bookstore-react-redux/development/license.txt) licensed.
