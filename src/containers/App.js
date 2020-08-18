@@ -14,7 +14,17 @@ const App = ({ books }) => (
 );
 
 App.propTypes = {
-  books: PropTypes.array.isRequired,
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      title: PropTypes.string,
+      category: PropTypes.string,
+    }),
+  ),
+};
+
+App.defaultProps = {
+  books: [],
 };
 
 const mapStateToProps = state => ({ books: state.books });

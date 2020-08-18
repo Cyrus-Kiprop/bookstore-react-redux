@@ -13,11 +13,11 @@ const BooksForm = () => {
   return (
     <form className="form-row align-items-end">
       <div className="col">
-        <label className="">add new book</label>
         <input
           className="form-control"
           type="text"
           name="book"
+          id="book-input"
           placeholder="new book"
         />
       </div>

@@ -14,7 +14,7 @@ const BooksList = ({ books }) => (
       </tr>
     </thead>
     <tbody>
-      {books.map((book) => (
+      {books.map(book => (
         <Book book={book} key={book.id} />
       ))}
     </tbody>
