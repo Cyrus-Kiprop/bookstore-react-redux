@@ -17,7 +17,7 @@ const CategoryFilter = ({ handleFilterChange }) => {
         name="category"
         onChange={handleFilterChange}
       >
-        <option value="All" className="option">all</option>
+        <option value="all" className="option">all</option>
         {categories.map(category => (
           <option key={category} value={category} className="option">{category}</option>
         ))}
