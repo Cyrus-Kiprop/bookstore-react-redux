@@ -6,6 +6,7 @@ const Book = ({ book }) => (
     <td>{book.id.slice(0, 5)}</td>
     <td>{book.title}</td>
     <td>{book.category}</td>
+    <td> <button className="btn btn-danger btn-sm" type="button">remove book</button> </td>
   </tr>
 );
 
