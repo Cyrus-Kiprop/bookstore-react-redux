@@ -1,8 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import PropTypes from 'prop-types';
 
-import Book from './Book';
+import Book from '../components/Book';
 
 const BooksList = ({ books }) => (
   <table className="table table-striped table-hover">
@@ -21,6 +22,8 @@ const BooksList = ({ books }) => (
   </table>
 );
 
+const mapStateToProps = (state) => ({ books: state.books, filter: state.filter });
+
 BooksList.defaultProps = {
   books: [],
 };
@@ -29,4 +32,4 @@ BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object),
 };
 
-export default BooksList;
+export default connect(mapStateToProps)(BooksList);
