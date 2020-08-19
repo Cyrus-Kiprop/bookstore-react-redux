@@ -1,4 +1,6 @@
 import faker from 'faker';
+import uuid from 'uuid';
+console.log(uuid)
 
 const booksArray = [
   {
