@@ -11,7 +11,7 @@ const BooksForm = () => {
     'sci-fi',
   ];
   return (
-    <form className="form-row align-items-end">
+    <form className="form-row">
       <div className="col">
         <input
           className="form-control"

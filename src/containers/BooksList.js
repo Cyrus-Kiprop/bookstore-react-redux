@@ -22,24 +22,17 @@ const BooksList = ({ books }) => (
   </table>
 );
 
-BooksList.propTypes = {
-  books: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number,
-      title: PropTypes.string,
-      category: PropTypes.string,
-    }),
-  ),
-};
+const mapStateToProps = state => ({
+  books: state.books,
+  filter: state.filter,
+});
 
 BooksList.defaultProps = {
   books: [],
 };
 
-function mapStateToProps(state) {
-  return {
-    books: state.books,
-  };
-}
+BooksList.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.object),
+};
 
 export default connect(mapStateToProps)(BooksList);
