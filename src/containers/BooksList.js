@@ -12,6 +12,7 @@ const BooksList = ({ books }) => (
         <th scope="col">id</th>
         <th scope="col">title</th>
         <th scope="col">category</th>
+        <th scope="col">delete</th>
       </tr>
     </thead>
     <tbody>
