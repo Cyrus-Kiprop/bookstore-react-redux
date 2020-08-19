@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions';
 
+import { v4 as uuid } from 'uuid';
+
 const BooksForm = ({ createBook }) => {
   const categories = [
     'action',
@@ -29,7 +31,7 @@ const BooksForm = ({ createBook }) => {
     event.preventDefault();
     const { title, category } = state;
     if (title) {
-      createBook({ id: (Math.floor(Math.random() * 99) + 1), title, category });
+      createBook({ id: (uuid()), title, category });
       setState({
         title: '',
         category: categories[0],

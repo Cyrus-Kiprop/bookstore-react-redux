@@ -1,20 +1,19 @@
 import faker from 'faker';
-import uuid from 'uuid';
-console.log(uuid)
+import { v4 as uuid } from 'uuid';
 
 const booksArray = [
   {
-    id: Math.floor(Math.random() * 99) + 1,
+    id: uuid(),
     title: faker.lorem.words(),
     category: 'action',
   },
   {
-    id: Math.floor(Math.random() * 99) + 1,
+    id: uuid(),
     title: faker.lorem.words(),
     category: 'biography',
   },
   {
-    id: Math.floor(Math.random() * 99) + 1,
+    id: uuid(),
     title: faker.lorem.words(),
     category: 'history',
   },
