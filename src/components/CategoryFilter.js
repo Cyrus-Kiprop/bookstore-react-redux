@@ -13,18 +13,26 @@ const CategoryFilter = ({ handleFilterChange }) => {
   ];
 
   return (
-    <div className="filter-container form-group w-25 px-5 float-right">
-      <p>filter by category: </p>
+    <div className="filter-container mr-auto">
+      {/* <p>filter by category: </p> */}
       <select
-        className="select form-control"
+        style={{
+          marginRight: 'auto',
+        }}
+        className="select form-control cat-section"
         name="category"
         onChange={handleFilterChange}
       >
         <option value="All" className="option">
-          all
+          CATEGORIES
         </option>
         {categories.map((category) => (
-          <option key={category} value={category} className="option">
+          <option
+            key={category}
+            value={category}
+            style={{ textTransform: 'uppercase' }}
+            className="option"
+          >
             {category}
           </option>
         ))}

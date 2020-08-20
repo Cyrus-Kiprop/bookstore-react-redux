@@ -54,6 +54,22 @@ img {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
 }
 
+.cat-section {
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  border: none;
+}
+
+.cat-section:hover {
+  outline: none;
+}
+
 .panel {
   width: 80%;
   margin: 1rem auto;
