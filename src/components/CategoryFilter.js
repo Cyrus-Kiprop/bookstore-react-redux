@@ -6,10 +6,10 @@ const CategoryFilter = ({ handleFilterChange }) => {
   const categories = ['action', 'biography', 'history', 'horror', 'kids', 'learning', 'sci-fi'];
 
   return (
-    <div className="filter-container">
-      <p>Filter by category: </p>
+    <div className="filter-container form-group w-25 px-5 float-right">
+      <p>filter by category: </p>
       <select
-        className="select"
+        className="select form-control"
         name="category"
         onChange={handleFilterChange}
       >
