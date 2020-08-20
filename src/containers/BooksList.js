@@ -24,7 +24,7 @@ const BooksList = ({
   return (
     <>
       <CategoryFilter handleFilterChange={handleFilterChange} />
-      <table className="table table-striped table-hover">
+      <table className="table table-striped table-hover w-75 m-auto p-3">
         <thead>
           <tr>
             <th scope="col">id</th>
