@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const CategoryFilter = ({ handleFilterChange }) => {
-  // const handleFilterChange = (event) => {
-  //   const { value } = event.target;
-  //   filterCategory(value);
-  // };
 
   const categories = ['action', 'biography', 'history', 'horror', 'kids', 'learning', 'sci-fi'];
 
