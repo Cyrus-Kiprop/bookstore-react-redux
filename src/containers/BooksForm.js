@@ -30,7 +30,7 @@ const BooksForm = ({ createBook }) => {
     event.preventDefault();
     const { title, category } = state;
     if (title) {
-      createBook({ id: (uuid()), title, category });
+      createBook({ id: uuid(), title, category });
       setState({
         title: '',
         category: categories[0],
@@ -41,7 +41,8 @@ const BooksForm = ({ createBook }) => {
   return (
     <>
       <hr className="m-5" />
-      <label className="lbl-anb px-5">ADD NEW BOOK</label>
+
+      <span className="lbl-anb px-5">ADD NEW BOOK</span>
       <form className="form-row px-5" onSubmit={handleSubmit}>
         <div className="col-6">
           <input
@@ -55,7 +56,12 @@ const BooksForm = ({ createBook }) => {
           />
         </div>
         <div className="col-3">
-          <select className="form-control" onChange={handleChange} value={state.category} name="category">
+          <select
+            className="form-control"
+            onChange={handleChange}
+            value={state.category}
+            name="category"
+          >
             <option value="" disabled>
               category
             </option>

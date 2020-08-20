@@ -6,16 +6,16 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook } from '../actions';
 
-const BooksList = ({ books, removeBook, filter}) => {
-  const handleRemoveBook = (book) => {
+const BooksList = ({ books, removeBook, filter }) => {
+  const handleRemoveBook = book => {
     removeBook(book);
   };
 
   return (
     <>
       {books
-        .filter((book) => filter === 'All' || book.category === filter)
-        .map((book) => (
+        .filter(book => filter === 'All' || book.category === filter)
+        .map(book => (
           <Book book={book} key={book.id} handleRemoveBook={handleRemoveBook} />
         ))}
     </>
@@ -35,13 +35,13 @@ BooksList.propTypes = {
 BooksList.defaultProps = {
   filter: 'All',
 };
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   books: state.books,
   filter: state.filter,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  removeBook: (book) => dispatch(removeBook(book)),
+const mapDispatchToProps = dispatch => ({
+  removeBook: book => dispatch(removeBook(book)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);

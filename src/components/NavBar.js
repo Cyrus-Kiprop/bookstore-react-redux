@@ -9,7 +9,7 @@ import CategoryFilter from './CategoryFilter';
 import { changeFilter } from '../actions';
 
 const NavBar = ({ filterCategory }) => {
-  const handleFilterChange = (event) => {
+  const handleFilterChange = event => {
     event.preventDefault();
     const { target } = event;
     const { value } = target;
@@ -38,14 +38,12 @@ NavBar.propTypes = {
   filterCategory: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   filter: state.filter,
 });
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    filterCategory: (option) => dispatch(changeFilter(option)),
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  filterCategory: option => dispatch(changeFilter(option)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

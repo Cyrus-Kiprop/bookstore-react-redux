@@ -9,7 +9,7 @@ const Book = ({ book, handleRemoveBook }) => (
       <div className="book-description">
         <div className="category">{book.category}</div>
         <div className="title">{book.title}</div>
-        <div className="author">Cyrus Kiprop</div>
+        <div className="author">Susanne Collins</div>
         <div className="d-flex actions">
           <button type="button">Comments</button>
           <button
