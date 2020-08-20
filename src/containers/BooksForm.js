@@ -39,36 +39,40 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <form className="form-row" onSubmit={handleSubmit}>
-      <div className="col">
-        <input
-          className="form-control"
-          type="text"
-          id="book-input"
-          placeholder="new book"
-          onChange={handleChange}
-          value={state.title}
-          name="title"
-        />
-      </div>
-      <div className="col">
-        <select className="form-control" onChange={handleChange} value={state.category} name="category">
-          <option value="" disabled>
-            category
-          </option>
-          {categories.map(category => (
-            <option key={category} value={category}>
-              {category}
+    <>
+      <hr className="m-5" />
+      <label className="lbl-anb px-5">ADD NEW BOOK</label>
+      <form className="form-row px-5" onSubmit={handleSubmit}>
+        <div className="col-6">
+          <input
+            className="form-control"
+            type="text"
+            id="book-input"
+            placeholder="new book"
+            onChange={handleChange}
+            value={state.title}
+            name="title"
+          />
+        </div>
+        <div className="col-3">
+          <select className="form-control" onChange={handleChange} value={state.category} name="category">
+            <option value="" disabled>
+              category
             </option>
-          ))}
-        </select>
-      </div>
-      <div className="col">
-        <button className="btn btn-primary mb-2" type="submit">
-          create new book
-        </button>
-      </div>
-    </form>
+            {categories.map(category => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="col-3">
+          <button className="btn btn-primary mb-2" type="submit">
+            ADD BOOK
+          </button>
+        </div>
+      </form>
+    </>
   );
 };
 

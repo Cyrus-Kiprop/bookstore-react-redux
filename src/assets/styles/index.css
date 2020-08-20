@@ -8,7 +8,9 @@
 html,
 body {
   font-size: 16px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  background-color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
 }
 
 root {
@@ -19,23 +21,31 @@ root {
 img {
   object-fit: cover;
 }
-
-/* footer */
-footer {
-  padding: 20px;
+/* navbar */
+.navbar {
+  padding: 1rem 3rem;
 }
 
-footer small {
-  float: right;
+.bg-light {
+  background-color: white !important;
 }
 
-footer a {
-  color: gray;
-  padding-left: 0.7em;
+.navbar-brand {
+  color: #0290ff !important;
+  font-weight: bold;
+  font-size: 26px;
 }
 
-footer a:hover {
-  color: black;
+.nav-link {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* BooksForm */
+.lbl-anb {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .app {

@@ -20,7 +20,6 @@ const BooksList = ({
     const { value } = target;
     filterCategory(value);
   };
-
   return (
     <>
       <CategoryFilter handleFilterChange={handleFilterChange} />
@@ -45,7 +44,7 @@ BooksList.propTypes = {
 };
 
 BooksList.defaultProps = {
-  filter: 'All',
+  filter: 'all',
 };
 const mapStateToProps = state => ({
   books: state.books,
