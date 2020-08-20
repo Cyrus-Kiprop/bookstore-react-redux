@@ -39,8 +39,11 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <form className="form-row" onSubmit={handleSubmit}>
-      <div className="col">
+    <>
+    <hr className="m-5"/>
+    <label className="lbl-anb px-5">ADD NEW BOOK</label>
+    <form className="form-row px-5" onSubmit={handleSubmit}>
+      <div className="col-6">
         <input
           className="form-control"
           type="text"
@@ -51,7 +54,7 @@ const BooksForm = ({ createBook }) => {
           name="title"
         />
       </div>
-      <div className="col">
+      <div className="col-3">
         <select className="form-control" onChange={handleChange} value={state.category} name="category">
           <option value="" disabled>
             category
@@ -63,12 +66,13 @@ const BooksForm = ({ createBook }) => {
           ))}
         </select>
       </div>
-      <div className="col">
+      <div className="col-3">
         <button className="btn btn-primary mb-2" type="submit">
-          create new book
+          ADD BOOK
         </button>
       </div>
     </form>
+    </>
   );
 };
 

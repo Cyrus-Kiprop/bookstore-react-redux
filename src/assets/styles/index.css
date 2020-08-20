@@ -3,7 +3,7 @@ html,
 body {
   font-size: 16px;
   overflow-x: hidden;
-  background-color: #f5f6fa;
+  background-color: #F5F5F5;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -11,6 +11,11 @@ body {
 .navbar {
   padding: 1rem 3rem;
 }
+
+.bg-light {
+  background-color: white!important;
+}
+
 .navbar-brand {
   color: #0290ff!Important;
   font-weight: bold;
@@ -21,4 +26,10 @@ body {
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 2px;
+}
+
+/* BooksForm */
+.lbl-anb {
+  font-weight: bold;
+  color: rgba(0,0,0,.5);
 }
