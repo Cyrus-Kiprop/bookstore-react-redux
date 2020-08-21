@@ -41,9 +41,8 @@ const BooksForm = ({ createBook }) => {
   return (
     <>
       <hr className="m-5" />
-
       <span className="lbl-anb px-5">ADD NEW BOOK</span>
-      <form className="form-row px-5" onSubmit={handleSubmit}>
+      <form className="form-row px-5 " onSubmit={handleSubmit}>
         <div className="col-6">
           <input
             className="form-control"
@@ -55,7 +54,7 @@ const BooksForm = ({ createBook }) => {
             name="title"
           />
         </div>
-        <div className="col-3">
+        <div className="col-4 pl-5">
           <select
             className="form-control"
             onChange={handleChange}
@@ -72,8 +71,8 @@ const BooksForm = ({ createBook }) => {
             ))}
           </select>
         </div>
-        <div className="col-3">
-          <button className="btn btn-primary mb-2" type="submit">
+        <div className="col-2">
+          <button className="btn btn-primary mb-2 float-right" type="submit">
             ADD BOOK
           </button>
         </div>
