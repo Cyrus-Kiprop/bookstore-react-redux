@@ -41,7 +41,7 @@ const Book = ({ book, handleRemoveBook }) => (
         </div>
       </div>
     </div>
-    <di className="border" />
+    <div className="border" />
 
     <div className="chapter-details">
       <div>current chapter</div>
