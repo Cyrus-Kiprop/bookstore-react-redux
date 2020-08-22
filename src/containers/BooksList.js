@@ -6,27 +6,19 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook } from '../actions';
 
-const BooksList = ({ books, removeBook }) => {
+const BooksList = ({ books, removeBook, filter }) => {
   const handleRemoveBook = book => {
     removeBook(book);
   };
 
   return (
-    <table className="table table-striped table-hover">
-      <thead>
-        <tr>
-          <th scope="col">id</th>
-          <th scope="col">title</th>
-          <th scope="col">category</th>
-          <th scope="col">delete</th>
-        </tr>
-      </thead>
-      <tbody>
-        {books.map(book => (
+    <>
+      {books
+        .filter(book => filter === 'All' || book.category === filter)
+        .map(book => (
           <Book book={book} key={book.id} handleRemoveBook={handleRemoveBook} />
         ))}
-      </tbody>
-    </table>
+    </>
   );
 };
 
@@ -37,10 +29,15 @@ BooksList.defaultProps = {
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object),
   removeBook: PropTypes.func.isRequired,
+  filter: PropTypes.string,
 };
 
+BooksList.defaultProps = {
+  filter: 'All',
+};
 const mapStateToProps = state => ({
   books: state.books,
+  filter: state.filter,
 });
 
 const mapDispatchToProps = dispatch => ({
